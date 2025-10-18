@@ -8,7 +8,7 @@ use Throwable;
 class Handler extends ExceptionHandler
 {
     /**
-<<<<<<< HEAD
+ HEAD
      * A list of the exception types that are not reported.
      *
      * @var array
@@ -23,20 +23,19 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontFlash = [
-=======
-     * The list of the inputs that are never flashed to the session on validation exceptions.
+         * The list of the inputs that are never flashed to the session on validation exceptions.
      *
      * @var array<int, string>
      */
     protected $dontFlash = [
         'current_password',
->>>>>>> df8fd1e0a75bf37a3f73aca1da97278d268a4c67
+         df8fd1e0a75bf37a3f73aca1da97278d268a4c67
         'password',
         'password_confirmation',
     ];
 
     /**
-<<<<<<< HEAD
+ HEAD
      * Report or log an exception.
      *
      * @param  \Throwable  $exception
@@ -61,7 +60,7 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $exception)
     {
         return parent::render($request, $exception);
-=======
+
      * Register the exception handling callbacks for the application.
      */
     public function register(): void
@@ -69,6 +68,6 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
->>>>>>> df8fd1e0a75bf37a3f73aca1da97278d268a4c67
+ df8fd1e0a75bf37a3f73aca1da97278d268a4c67
     }
 }

@@ -24,14 +24,18 @@ class Kernel extends ConsoleKernel
      * @return void
      */
     protected function schedule(Schedule $schedule)
-        df8fd1e0a75bf37a3f73aca1da97278d268a4c67
+
+     *// Define the application's command schedule
+     *//
+    protected function schedule(Schedule $schedule): void
+     df8fd1e0a75bf37a3f73aca1da97278d268a4c67
     {
         // $schedule->command('inspire')->hourly();
     }
 
     /**
      * Register the commands for the application.
-         HEAD
+     HEAD
      *
      * @return void
      */
@@ -39,7 +43,7 @@ class Kernel extends ConsoleKernel
 
      */
     protected function commands(): void
-         df8fd1e0a75bf37a3f73aca1da97278d268a4c67
+     df8fd1e0a75bf37a3f73aca1da97278d268a4c67
     {
         $this->load(__DIR__.'/Commands');
 
